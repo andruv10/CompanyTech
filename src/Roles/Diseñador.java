@@ -17,16 +17,13 @@ public class Diseñador extends Empleado {
         this.herramientaDiseño = herramientaDiseño;
     }
 
-    // Implementación del método abstracto
     @Override
     public double calcularSalario() {
-        // Puedes modificar esta lógica si deseas
         return getSalarioBase() + 500;
     }
 
-    // Este método NO es abstracto en Empleado, pero puedes definirlo para
-    // comportamiento específico
-    public void trabajar() {
-        System.out.println(getNombre() + " está diseñando usando " + herramientaDiseño);
+    @Override
+    public String trabajar() {
+        return getNombre() + " está diseñando usando " + herramientaDiseño;
     }
 }
