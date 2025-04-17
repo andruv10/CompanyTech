@@ -46,7 +46,12 @@ public class Tester extends Empleado{
          System.out.println("TESTER");
         super.mostrarDatos();
         System.out.println("Nivel de certificacion"+ nivelCert);    
-}
+    }
+
+    @Override
+    public String trabajar() {
+        return getNombre() + " está completando los test unitarios del actual proyecto";
+    }
     
     
     

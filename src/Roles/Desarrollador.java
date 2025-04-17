@@ -2,7 +2,7 @@
 package Roles;
 
 
-public class Desarrollador extends Empleado{
+public class Desarrollador extends Empleado {
     
     private String lenguaje;
 
@@ -30,6 +30,9 @@ public class Desarrollador extends Empleado{
         super.mostrarDatos();
         System.out.println("Lenguaje de programacion"+ lenguaje);    
     }
-    
-    
+
+    @Override
+    public String trabajar() {
+        return getNombre() + " está implementando la nueva API escrita en " + lenguaje;
+    }
 }

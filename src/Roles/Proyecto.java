@@ -18,7 +18,7 @@ public class Proyecto {
     public void mostrarEmpleados() {
         System.out.println("Proyecto: " + nombre);
         for (Empleado emp : empleados) {
-            System.out.println("- " + emp.getNombre());
+            System.out.println("- " + emp.getNombre() + " " + emp.trabajar());
         }
     }
 

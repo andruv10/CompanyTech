@@ -28,9 +28,12 @@ public class Gerente extends Empleado {
      public void mostrarDatos(){
          System.out.println("GERENTE");
         super.mostrarDatos();
-        System.out.println("Bono Gerencial"+ bonoGerencial);    
-}
-    
-    
-    
+        System.out.println("Bono Gerencial "+ bonoGerencial);    
+    }
+
+    @Override
+    public String trabajar() {
+        return getNombre() + " está gestionando las nuevas inversiones para los próximos proyectos";
+    }
+   
 }
